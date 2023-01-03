@@ -1,16 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        byte totalSeats = 102;
-        byte seats = 60;
-        byte passengers = 85;
-        int standingPlaces = totalSeats - seats;
-        if (passengers >= seats && passengers <= totalSeats) {
-            int freeStandingPlaces = totalSeats - passengers;
-            System.out.println ("Если в вагон сядут " + passengers + " пассажиров, то в вагоне останется " + freeStandingPlaces + " стоячих мест.");
-        } else {
-            int freeSeats = seats - passengers;
-            System.out.println ("Если в вагон сядут " + passengers + " пассажиров, то в вагоне останется " + freeSeats + " сидячих мест, и " + standingPlaces + " стоячих мест.");
+        int one = 25;
+        int two = 21;
+        int three = 33;
+        boolean firstNumberLarger = one > two && one > three;
+        if (firstNumberLarger) {
+            System.out.println ("Первое число самое большее.");
         }
+        boolean secondNumberLarger = two > one && two > three;
+        if (secondNumberLarger) {
+            System.out.println ("Второе число самое большее.");
+        } else { System.out.println ("Третье число самое большее.");
+        }
+
 
 
 
