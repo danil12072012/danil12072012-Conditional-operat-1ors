@@ -1,14 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        byte age = 8;
-        if ( age < 5) {
-            System.out.println ("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе.");
-        }
-        if ( age >= 5 && age < 14) {
-            System.out.println ("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
+        byte totalSeats = 102;
+        byte seats = 60;
+        byte passengers = 85;
+        int standingPlaces = totalSeats - seats;
+        if (passengers >= seats && passengers <= totalSeats) {
+            int freeStandingPlaces = totalSeats - passengers;
+            System.out.println ("Если в вагон сядут " + passengers + " пассажиров, то в вагоне останется " + freeStandingPlaces + " стоячих мест.");
         } else {
-            System.out.println ("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
+            int freeSeats = seats - passengers;
+            System.out.println ("Если в вагон сядут " + passengers + " пассажиров, то в вагоне останется " + freeSeats + " сидячих мест, и " + standingPlaces + " стоячих мест.");
         }
+
 
 
 
