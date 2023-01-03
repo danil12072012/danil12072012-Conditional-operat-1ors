@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        byte temperature = 6;
-        if (temperature >= 5) {
-            System.out.println("На улице  " + temperature + " градусов, можно идти без шапки.");
+        byte speed = 59;
+        if (speed > 60) {
+            System.out.println ("Если скорость " + speed + ", то придется заплатить штраф.");
+        } else {
+            System.out.println ("Если скорость " + speed + ", можно ездить спокойно.");
         }
 
-        if (temperature < 5) {
-            System.out.println("На улице  " + temperature + " градусов, нужно надеть шапку.");
-        }
 
 
     }
